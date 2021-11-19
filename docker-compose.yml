@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  service1:
+    image: jsgods/service1
+    ports:
+      - target: 3000
+        # published: 3000
+        protocol: tcp
+    deploy:
+      replicas: 4
